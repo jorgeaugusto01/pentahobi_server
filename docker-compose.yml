@@ -1,0 +1,86 @@
+version: "3"
+
+services:
+
+    db:
+        build: ./pentaho_server_postgres
+        container_name: postgres11
+        restart: always
+        environment:
+            POSTGRES_PASSWORD: postgres
+            POSTGRES_HOST_AUTH_METHOD: trust
+            
+        volumes:
+            - type: volume
+              source: pentahodata
+              target: /var/lib/postgres/data
+
+            #Configuracão do postgresql
+            - type: bind
+              source: ./pentaho_server_postgres/postgresql.conf
+              target: /etc/postgresql/postgresql.conf
+
+            #Scripts executados ao iniciar o container, necessários para o pentaho
+            - ./pentaho_server_postgres/scripts/create_jcr_postgresql.sql:/docker-entrypoint-initdb.d/create_jcr_postgresql.sql
+            - ./pentaho_server_postgres/scripts/create_quartz_postgresql.sql:/docker-entrypoint-initdb.d/create_quartz_postgresql.sql
+            - ./pentaho_server_postgres/scripts/create_repository_postgresql.sql:/docker-entrypoint-initdb.d/create_repository_postgresql.sql
+
+        #Informa qual arquivo conf do postgresq será utilizado
+        command: postgres -c config_file=/etc/postgresql/postgresql.conf 
+
+        networks:
+            - frontend
+        
+        expose: 
+            - 5432
+        ports: 
+            - '5433:5432'
+
+    pentaho:
+        build: ./pentaho_server_web
+        command: sh -c "/wait &&
+                        sh /opt/pentaho/pentaho-server/start-pentaho.sh && 
+                        tail -f /dev/null"
+        
+        #Variáveis utilizadas para aguardar o postgresql subir, antes de executar o pentaho 
+        environment:
+            - WAIT_HOSTS=db:5432
+            - WAIT_HOSTS_TIMEOUT=70
+            - WAIT_SLEEP_INTERVAL=7
+            - WAIT_HOST_CONNECT_TIMEOUT=7
+
+        depends_on: 
+            - db
+        container_name: pentahobiserver
+        tty: true
+
+        volumes:
+            #Configuracão tomcat pentaho
+            - type: bind
+              source: ./pentaho_server_web/context.xml
+              target: /opt/pentaho/pentaho-server/tomcat/webapps/pentaho/META-INF/context.xml
+
+            - type: volume
+              source: pentahoserver
+              target: /opt/pentaho/pentaho-server
+        
+        networks:
+            - frontend
+
+        expose: 
+            - 8080
+        ports: 
+            - '8080:8080'
+
+volumes:
+      pentahodata:
+      pentahoserver:
+
+networks:
+    frontend:
+        ipam:
+            driver: default
+            config:
+              - subnet: 172.16.220.0/24 
+                gateway: 172.16.220.1
+                   
