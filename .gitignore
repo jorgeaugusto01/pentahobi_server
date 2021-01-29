@@ -2,3 +2,4 @@
 # Edit at https://www.gitignore.io/?templates=virtualenv
 
 /pentaho_server_web/pentaho-server
+*.zip

@@ -18,7 +18,8 @@ RUN apt update; apt add zip netcat -y; \
 
 ######Utilizar se não já estiver baixado o pentaho######
 # Download do pentaho server em https://megalink.dl.sourceforge.net/project/pentaho/Pentaho%209.1/server/pentaho-server-ce-9.1.0.0-324.zip?viasf=1
-RUN wget --progress=dot:giga https://megalink.dl.sourceforge.net/project/pentaho/Pentaho%209.1/server/pentaho-server-ce-9.1.0.0-324.zip?viasf=1 -O /tmp/pentaho-server.zip 
+#RUN wget --progress=dot:giga https://megalink.dl.sourceforge.net/project/pentaho/Pentaho%209.1/server/pentaho-server-ce-9.1.0.0-324.zip?viasf=1 -O /tmp/pentaho-server.zip 
+ADD pentaho-server-ce-9.1.0.0-324.zip /tmp/pentaho-server.zip 
 
 # Decompactar o pentaho-server; iniciar o tomcat; atribuir permissões
 RUN /usr/bin/unzip -q /tmp/pentaho-server.zip -d  $PENTAHO_HOME; \
@@ -35,3 +36,6 @@ RUN /usr/bin/unzip -q /tmp/pentaho-server.zip -d  $PENTAHO_HOME; \
 ENV WAIT_VERSION 2.7.2
 ADD https://github.com/ufoscout/docker-compose-wait/releases/download/$WAIT_VERSION/wait /wait
 RUN chmod +x /wait
+
+
+
