@@ -1,0 +1,264 @@
+#######################################################################
+WARNING:  no libwebkitgtk-1.0 detected, some features will be unavailable
+    Consider installing the package with apt-get or yum.
+    e.g. 'sudo apt-get install libwebkitgtk-1.0-0'
+#######################################################################
+02:50:07,085 INFO  [KarafBoot] Checking to see if org.pentaho.clean.karaf.cache is enabled
+02:50:07,175 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 1 at /opt/pentaho/data-integration/./system/kara ***
+***   f/caches/pan/data-1                                                   ***
+*** Karaf Port:8802                                                         ***
+*** OSGI Service Port:9051                                                  ***
+*******************************************************************************
+Feb 07, 2021 2:50:07 AM org.apache.karaf.main.Main launch
+INFO: Installing and starting initial bundles
+Feb 07, 2021 2:50:07 AM org.apache.karaf.main.Main launch
+INFO: All initial bundles installed and set to start
+Feb 07, 2021 2:50:07 AM org.apache.karaf.main.Main$KarafLockCallback lockAcquired
+INFO: Lock acquired. Setting startlevel to 100
+Feb 07, 2021 2:50:16 AM org.pentaho.caching.impl.PentahoCacheManagerFactory$RegistrationHandler$1 onSuccess
+INFO: New Caching Service registered
+Feb 07, 2021 2:50:23 AM org.apache.aries.spifly.BaseActivator log
+INFO: Examining bundle for SPI provider: org.eclipse.jetty.websocket.common
+Feb 07, 2021 2:50:23 AM org.apache.aries.spifly.BaseActivator log
+INFO: Found SPI resource: bundle://177.0:0/META-INF/services/org.eclipse.jetty.websocket.api.extensions.Extension
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Loaded SPI provider: class org.eclipse.jetty.websocket.common.extensions.identity.IdentityExtension
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Registered service: org.apache.felix.framework.ServiceRegistrationImpl@7913b39f
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Registered provider: org.eclipse.jetty.websocket.api.extensions.Extension in bundle org.eclipse.jetty.websocket.common
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Loaded SPI provider: class org.eclipse.jetty.websocket.common.extensions.fragment.FragmentExtension
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Registered service: org.apache.felix.framework.ServiceRegistrationImpl@354fa4c3
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Registered provider: org.eclipse.jetty.websocket.api.extensions.Extension in bundle org.eclipse.jetty.websocket.common
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Loaded SPI provider: class org.eclipse.jetty.websocket.common.extensions.compress.PerMessageDeflateExtension
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Registered service: org.apache.felix.framework.ServiceRegistrationImpl@590d5ea4
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Registered provider: org.eclipse.jetty.websocket.api.extensions.Extension in bundle org.eclipse.jetty.websocket.common
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Loaded SPI provider: class org.eclipse.jetty.websocket.common.extensions.compress.DeflateFrameExtension
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Registered service: org.apache.felix.framework.ServiceRegistrationImpl@727757af
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Registered provider: org.eclipse.jetty.websocket.api.extensions.Extension in bundle org.eclipse.jetty.websocket.common
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Loaded SPI provider: class org.eclipse.jetty.websocket.common.extensions.compress.XWebkitDeflateFrameExtension
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Registered service: org.apache.felix.framework.ServiceRegistrationImpl@178db5f5
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Registered provider: org.eclipse.jetty.websocket.api.extensions.Extension in bundle org.eclipse.jetty.websocket.common
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Examining bundle for SPI provider: org.eclipse.jetty.http
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Found SPI resource: bundle://160.0:0/META-INF/services/org.eclipse.jetty.http.HttpFieldPreEncoder
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Loaded SPI provider: class org.eclipse.jetty.http.Http1FieldPreEncoder
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Registered service: org.apache.felix.framework.ServiceRegistrationImpl@42f0cbb7
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Registered provider: org.eclipse.jetty.http.HttpFieldPreEncoder in bundle org.eclipse.jetty.http
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Examining bundle for SPI provider: org.eclipse.jetty.websocket.javax.websocket
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Found SPI resource: bundle://178.0:0/META-INF/services/javax.websocket.ContainerProvider
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Loaded SPI provider: class org.eclipse.jetty.websocket.jsr356.JettyClientContainerProvider
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Registered service: org.apache.felix.framework.ServiceRegistrationImpl@532d03f7
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Registered provider: javax.websocket.ContainerProvider in bundle org.eclipse.jetty.websocket.javax.websocket
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Examining bundle for SPI provider: org.eclipse.jetty.websocket.server
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Found SPI resource: bundle://180.0:0/META-INF/services/javax.servlet.ServletContainerInitializer
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Loaded SPI provider: class org.eclipse.jetty.websocket.server.NativeWebSocketServletContainerInitializer
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Registered service: org.apache.felix.framework.ServiceRegistrationImpl@4f72e0ba
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Registered provider: javax.servlet.ServletContainerInitializer in bundle org.eclipse.jetty.websocket.server
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Examining bundle for SPI provider: org.eclipse.jetty.websocket.javax.websocket.server
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Found SPI resource: bundle://179.0:0/META-INF/services/javax.servlet.ServletContainerInitializer
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Loaded SPI provider: class org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Registered service: org.apache.felix.framework.ServiceRegistrationImpl@70e50af4
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Registered provider: javax.servlet.ServletContainerInitializer in bundle org.eclipse.jetty.websocket.javax.websocket.server
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Found SPI resource: bundle://179.0:0/META-INF/services/javax.websocket.server.ServerEndpointConfig$Configurator
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Loaded SPI provider: class org.eclipse.jetty.websocket.jsr356.server.ContainerDefaultConfigurator
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Registered service: org.apache.felix.framework.ServiceRegistrationImpl@673bb245
+Feb 07, 2021 2:50:24 AM org.apache.aries.spifly.BaseActivator log
+INFO: Registered provider: javax.websocket.server.ServerEndpointConfig$Configurator in bundle org.eclipse.jetty.websocket.javax.websocket.server
+2021-02-07 02:50:25.267:INFO::features-3-thread-1: Logging initialized @22761ms to org.eclipse.jetty.util.log.StdErrLog
+Feb 07, 2021 2:50:25 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-management (132) [org.apache.cxf.management.InstrumentationManager]
+Feb 07, 2021 2:50:25 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-rs-service-description (137) [org.apache.cxf.jaxrs.model.wadl.WadlGenerator]
+Feb 07, 2021 2:50:25 AM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (139) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+Feb 07, 2021 2:50:26 AM org.apache.cxf.transport.http.osgi.ServletExporter updated
+INFO: Registering new instance of "/cxf" servlet
+Feb 07, 2021 2:50:26 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /i18n
+2021-02-07 02:50:27.092:INFO:oejws.WebSocketServerFactory:CM Configuration Updater (ManagedService Update: pid=[org.apache.cxf.osgi]): No DecoratedObjectFactory provided, using new org.eclipse.jetty.util.DecoratedObjectFactory[decorators=1]
+2021-02-07 02:50:27.213:INFO:oejws.WebSocketServerFactory:features-3-thread-1: No DecoratedObjectFactory provided, using new org.eclipse.jetty.util.DecoratedObjectFactory[decorators=1]
+2021-02-07 02:50:27.231:INFO:oejs.session:CM Configuration Updater (ManagedService Update: pid=[org.apache.cxf.osgi]): DefaultSessionIdManager workerName=node0
+2021-02-07 02:50:27.231:INFO:oejs.session:CM Configuration Updater (ManagedService Update: pid=[org.apache.cxf.osgi]): No SessionScavenger set, using defaults
+2021-02-07 02:50:27.233:INFO:oejs.session:CM Configuration Updater (ManagedService Update: pid=[org.apache.cxf.osgi]): node0 Scavenging every 660000ms
+2021-02-07 02:50:27.257:INFO:oejsh.ContextHandler:features-3-thread-1: Started HttpServiceContext{httpContext=DefaultHttpContext [bundle=pentaho-i18n-webservice-bundle [222], contextID=default]}
+2021-02-07 02:50:27.264:INFO:oejsh.ContextHandler:CM Configuration Updater (ManagedService Update: pid=[org.apache.cxf.osgi]): Started HttpServiceContext{httpContext=DefaultHttpContext [bundle=org.apache.cxf.cxf-rt-transports-http [139], contextID=default]}
+2021-02-07 02:50:27.277:INFO:oejs.Server:CM Configuration Updater (ManagedService Update: pid=[org.apache.cxf.osgi]): jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_275-8u275-b01-0ubuntu1~20.04-b01
+2021-02-07 02:50:27.358:INFO:oejs.AbstractConnector:CM Configuration Updater (ManagedService Update: pid=[org.apache.cxf.osgi]): Started default@25b6f3a0{HTTP/1.1,[http/1.1]}{0.0.0.0:9051}
+2021-02-07 02:50:27.358:INFO:oejs.Server:CM Configuration Updater (ManagedService Update: pid=[org.apache.cxf.osgi]): Started @24852ms
+2021-02-07 02:50:35.968:INFO:oejws.WebSocketServerFactory:features-3-thread-1: No DecoratedObjectFactory provided, using new org.eclipse.jetty.util.DecoratedObjectFactory[decorators=1]
+2021-02-07 02:50:36.017:INFO:oejsh.ContextHandler:features-3-thread-1: Started HttpServiceContext{httpContext=DefaultHttpContext [bundle=pentaho-webjars-angular-sanitize [257], contextID=default]}
+2021-02-07 02:50:36.041:INFO:oejws.WebSocketServerFactory:features-3-thread-1: No DecoratedObjectFactory provided, using new org.eclipse.jetty.util.DecoratedObjectFactory[decorators=1]
+2021-02-07 02:50:36.058:INFO:oejsh.ContextHandler:features-3-thread-1: Started HttpServiceContext{httpContext=DefaultHttpContext [bundle=pentaho-webjars-angular-ui-bootstrap-bower [259], contextID=default]}
+2021-02-07 02:50:36.094:INFO:oejws.WebSocketServerFactory:features-3-thread-1: No DecoratedObjectFactory provided, using new org.eclipse.jetty.util.DecoratedObjectFactory[decorators=1]
+2021-02-07 02:50:36.101:INFO:oejsh.ContextHandler:features-3-thread-1: Started HttpServiceContext{httpContext=DefaultHttpContext [bundle=pentaho-webjars-jquery [260], contextID=default]}
+2021-02-07 02:50:36.132:INFO:oejws.WebSocketServerFactory:features-3-thread-1: No DecoratedObjectFactory provided, using new org.eclipse.jetty.util.DecoratedObjectFactory[decorators=1]
+2021-02-07 02:50:36.139:INFO:oejsh.ContextHandler:features-3-thread-1: Started HttpServiceContext{httpContext=DefaultHttpContext [bundle=pentaho-webjars-angular-route [256], contextID=default]}
+Feb 07, 2021 2:50:37 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /marketplace
+2021-02-07 02:50:37.042:INFO:oejws.WebSocketServerFactory:features-3-thread-1: No DecoratedObjectFactory provided, using new org.eclipse.jetty.util.DecoratedObjectFactory[decorators=1]
+2021-02-07 02:50:37.048:INFO:oejsh.ContextHandler:features-3-thread-1: Started HttpServiceContext{httpContext=DefaultHttpContext [bundle=pentaho-webjars-underscore [261], contextID=default]}
+2021-02-07 02:50:37.065:INFO:oejws.WebSocketServerFactory:features-3-thread-1: No DecoratedObjectFactory provided, using new org.eclipse.jetty.util.DecoratedObjectFactory[decorators=1]
+2021-02-07 02:50:37.073:INFO:oejsh.ContextHandler:features-3-thread-1: Started HttpServiceContext{httpContext=DefaultHttpContext [bundle=pentaho-webjars-angular-translate [258], contextID=default]}
+2021-02-07 02:50:37.411:INFO:oejws.WebSocketServerFactory:FelixDispatchQueue: No DecoratedObjectFactory provided, using new org.eclipse.jetty.util.DecoratedObjectFactory[decorators=1]
+2021-02-07 02:50:37.433:INFO:oejsh.ContextHandler:FelixDispatchQueue: Started HttpServiceContext{httpContext=DefaultHttpContext [bundle=pentaho-marketplace-di [253], contextID=default]}
+2021-02-07 02:50:37.476:INFO:oejws.WebSocketServerFactory:features-3-thread-1: No DecoratedObjectFactory provided, using new org.eclipse.jetty.util.DecoratedObjectFactory[decorators=1]
+2021-02-07 02:50:37.487:INFO:oejsh.ContextHandler:features-3-thread-1: Started HttpServiceContext{httpContext=DefaultHttpContext [bundle=org.pentaho.requirejs-manager-impl [252], contextID=default]}
+2021-02-07 02:50:37.504:INFO:oejws.WebSocketServerFactory:features-3-thread-1: No DecoratedObjectFactory provided, using new org.eclipse.jetty.util.DecoratedObjectFactory[decorators=1]
+2021-02-07 02:50:37.509:INFO:oejsh.ContextHandler:features-3-thread-1: Started HttpServiceContext{httpContext=DefaultHttpContext [bundle=pentaho-webjars-angular-animate [255], contextID=default]}
+2021-02-07 02:50:37.530:INFO:oejws.WebSocketServerFactory:features-3-thread-1: No DecoratedObjectFactory provided, using new org.eclipse.jetty.util.DecoratedObjectFactory[decorators=1]
+2021-02-07 02:50:37.535:INFO:oejsh.ContextHandler:features-3-thread-1: Started HttpServiceContext{httpContext=DefaultHttpContext [bundle=pentaho-webjars-angular [254], contextID=default]}
+Feb 07, 2021 2:50:38 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /marketplace
+02:50:40,484 INFO  [DriverManager] Installing driver kars.
+02:50:40,486 INFO  [DriverManager] 0 drivers will be installed.
+02:50:40,486 INFO  [DriverManager] Finished installing drivers kars.
+2021/02/07 02:50:40 - Logging is at level : Detailed
+2021/02/07 02:50:40 - Start of run.
+2021/02/07 02:50:40 - tb_copia_setores_hades_tb_stakeholders_catalogo_local - Dispatching started for transformation [tb_copia_setores_hades_tb_stakeholders_catalogo_local]
+2021/02/07 02:50:40 - tb_copia_setores_hades_tb_stakeholders_catalogo_local - Nr of arguments detected:0 
+2021/02/07 02:50:40 - tb_copia_setores_hades_tb_stakeholders_catalogo_local - This is not a replay transformation
+2021/02/07 02:50:40 - tb_copia_setores_hades_tb_stakeholders_catalogo_local - I found 3 different steps to launch.
+2021/02/07 02:50:40 - tb_copia_setores_hades_tb_stakeholders_catalogo_local - Allocating rowsets...
+2021/02/07 02:50:40 - tb_copia_setores_hades_tb_stakeholders_catalogo_local -  Allocating rowsets for step 0 --> Select values
+2021/02/07 02:50:40 - tb_copia_setores_hades_tb_stakeholders_catalogo_local -   prevcopies = 1, nextcopies=1
+2021/02/07 02:50:40 - tb_copia_setores_hades_tb_stakeholders_catalogo_local - Transformation allocated new rowset [Select values.0 - Insert / update.0]
+2021/02/07 02:50:40 - tb_copia_setores_hades_tb_stakeholders_catalogo_local -  Allocated 1 rowsets for step 0 --> Select values  
+2021/02/07 02:50:40 - tb_copia_setores_hades_tb_stakeholders_catalogo_local -  Allocating rowsets for step 1 --> Insert / update
+2021/02/07 02:50:40 - tb_copia_setores_hades_tb_stakeholders_catalogo_local -  Allocated 1 rowsets for step 1 --> Insert / update  
+2021/02/07 02:50:40 - tb_copia_setores_hades_tb_stakeholders_catalogo_local -  Allocating rowsets for step 2 --> Table input
+2021/02/07 02:50:40 - tb_copia_setores_hades_tb_stakeholders_catalogo_local -   prevcopies = 1, nextcopies=1
+2021/02/07 02:50:40 - tb_copia_setores_hades_tb_stakeholders_catalogo_local - Transformation allocated new rowset [Table input.0 - Select values.0]
+2021/02/07 02:50:40 - tb_copia_setores_hades_tb_stakeholders_catalogo_local -  Allocated 2 rowsets for step 2 --> Table input  
+2021/02/07 02:50:40 - tb_copia_setores_hades_tb_stakeholders_catalogo_local - Allocating Steps & StepData...
+2021/02/07 02:50:40 - tb_copia_setores_hades_tb_stakeholders_catalogo_local -  Transformation is about to allocate step [Select values] of type [SelectValues]
+2021/02/07 02:50:40 - Select values.0 - distribution activated
+2021/02/07 02:50:40 - Select values.0 - Starting allocation of buffers & new threads...
+2021/02/07 02:50:40 - Select values.0 - Step info: nrinput=1 nroutput=1
+2021/02/07 02:50:40 - Select values.0 - Got previous step from [Select values] #0 --> Table input
+2021/02/07 02:50:40 - Select values.0 - input rel is 1:1
+2021/02/07 02:50:40 - Select values.0 - Found input rowset [Table input.0 - Select values.0]
+2021/02/07 02:50:40 - Select values.0 - output rel. is  1:1
+2021/02/07 02:50:40 - Select values.0 - Found output rowset [Select values.0 - Insert / update.0]
+2021/02/07 02:50:40 - Select values.0 - Finished dispatching
+2021/02/07 02:50:40 - tb_copia_setores_hades_tb_stakeholders_catalogo_local -  Transformation has allocated a new step: [Select values].0
+2021/02/07 02:50:40 - tb_copia_setores_hades_tb_stakeholders_catalogo_local -  Transformation is about to allocate step [Insert / update] of type [InsertUpdate]
+2021/02/07 02:50:40 - Insert / update.0 - distribution de-activated
+2021/02/07 02:50:40 - Insert / update.0 - Starting allocation of buffers & new threads...
+2021/02/07 02:50:40 - Insert / update.0 - Step info: nrinput=1 nroutput=0
+2021/02/07 02:50:40 - Insert / update.0 - Got previous step from [Insert / update] #0 --> Select values
+2021/02/07 02:50:40 - Insert / update.0 - input rel is 1:1
+2021/02/07 02:50:40 - Insert / update.0 - Found input rowset [Select values.0 - Insert / update.0]
+2021/02/07 02:50:40 - Insert / update.0 - Finished dispatching
+2021/02/07 02:50:40 - tb_copia_setores_hades_tb_stakeholders_catalogo_local -  Transformation has allocated a new step: [Insert / update].0
+2021/02/07 02:50:40 - tb_copia_setores_hades_tb_stakeholders_catalogo_local -  Transformation is about to allocate step [Table input] of type [TableInput]
+2021/02/07 02:50:40 - Table input.0 - distribution de-activated
+2021/02/07 02:50:40 - Table input.0 - Starting allocation of buffers & new threads...
+2021/02/07 02:50:40 - Table input.0 - Step info: nrinput=0 nroutput=1
+2021/02/07 02:50:40 - Table input.0 - output rel. is  1:1
+2021/02/07 02:50:40 - Table input.0 - Found output rowset [Table input.0 - Select values.0]
+2021/02/07 02:50:40 - Table input.0 - Finished dispatching
+2021/02/07 02:50:40 - tb_copia_setores_hades_tb_stakeholders_catalogo_local -  Transformation has allocated a new step: [Table input].0
+2021/02/07 02:50:40 - tb_copia_setores_hades_tb_stakeholders_catalogo_local - This transformation can be replayed with replay date: 2021/02/07 02:50:40
+2021/02/07 02:50:40 - tb_copia_setores_hades_tb_stakeholders_catalogo_local - Initialising 3 steps...
+2021/02/07 02:50:40 - Select values.0 - Released server socket on port 0
+2021/02/07 02:50:40 - Insert / update.0 - Released server socket on port 0
+2021/02/07 02:50:40 - Table input.0 - Released server socket on port 0
+2021/02/07 02:50:40 - HML_CatalogoApp - New database connection defined
+2021/02/07 02:50:40 - bdarchon - New database connection defined
+2021/02/07 02:50:41 - HML_CatalogoApp - Auto commit off
+2021/02/07 02:50:41 - bdarchon - Auto commit off
+2021/02/07 02:50:41 - Table input.0 - Connected to database...
+2021/02/07 02:50:41 - tb_copia_setores_hades_tb_stakeholders_catalogo_local - Step [Select values.0] initialized flawlessly.
+2021/02/07 02:50:41 - tb_copia_setores_hades_tb_stakeholders_catalogo_local - Step [Insert / update.0] initialized flawlessly.
+2021/02/07 02:50:41 - tb_copia_setores_hades_tb_stakeholders_catalogo_local - Step [Table input.0] initialized flawlessly.
+2021/02/07 02:50:41 - Select values.0 - Starting to run...
+2021/02/07 02:50:41 - Insert / update.0 - Starting to run...
+2021/02/07 02:50:41 - Table input.0 - Starting to run...
+2021/02/07 02:50:41 - Table input.0 - SQL query : select SETOR, 
+2021/02/07 02:50:41 - Table input.0 -         DATAINI,
+2021/02/07 02:50:41 - Table input.0 -         NOMESETOR, 
+2021/02/07 02:50:41 - Table input.0 -         tiposetor, 
+2021/02/07 02:50:41 - Table input.0 -         paisetor, 
+2021/02/07 02:50:41 - Table input.0 -         extinto, 
+2021/02/07 02:50:41 - Table input.0 -         'false' as entidade_externa,
+2021/02/07 02:50:41 - Table input.0 -         case paisetor
+2021/02/07 02:50:41 - Table input.0 -             when 'CSIS' then 'true'
+2021/02/07 02:50:41 - Table input.0 -             when 'STI' then 'true'
+2021/02/07 02:50:41 - Table input.0 -             when 'CGNC' then 'true'
+2021/02/07 02:50:41 - Table input.0 -             when 'CTEL' then 'true'
+2021/02/07 02:50:41 - Table input.0 -             when 'CSET' then 'true'
+2021/02/07 02:50:41 - Table input.0 -             when 'DATTI' then 'true'
+2021/02/07 02:50:41 - Table input.0 -             when 'CGOV' then 'true'
+2021/02/07 02:50:41 - Table input.0 -             when 'DIPAQ' then 'true'
+2021/02/07 02:50:41 - Table input.0 -             ELSE 'false'
+2021/02/07 02:50:41 - Table input.0 -         END as setor_tecnico
+2021/02/07 02:50:41 - Table input.0 - from HADES.hsetor tb1
+2021/02/07 02:50:41 - Table input.0 - where (extinto != 'S' or extinto is null)
+2021/02/07 02:50:41 - Table input.0 - AND tiposetor NOT LIKE 'SEM SETOR%'
+2021/02/07 02:50:41 - Table input.0 - --and setor like 'DIJUD'
+2021/02/07 02:50:41 - Table input.0 - AND DATAINI = (SELECT MAX(DATAINI) 
+2021/02/07 02:50:41 - Table input.0 -                 FROM HADES.hsetor tb2
+2021/02/07 02:50:41 - Table input.0 -                 WHERE tb1.SETOR = tb2.SETOR
+2021/02/07 02:50:41 - Table input.0 -                 GROUP BY SETOR)
+2021/02/07 02:50:41 - tb_copia_setores_hades_tb_stakeholders_catalogo_local - Transformation has allocated 3 threads and 2 rowsets.
+2021/02/07 02:50:42 - Insert / update.0 - Setting preparedStatement to [SELECT nome, tiposetor, extinto, divisao_tecnica, entidade_externa, setor FROM "public".tb_stakeholder WHERE  ( ( setor = ?  ) ) ]
+2021/02/07 02:50:42 - HML_CatalogoApp - Preparing statement: 
+2021/02/07 02:50:42 - HML_CatalogoApp - INSERT INTO "public".tb_stakeholder (nome, tiposetor, extinto, divisao_tecnica, entidade_externa, setor) VALUES ( ?,  ?,  ?,  ?,  ?,  ?)
+2021/02/07 02:50:42 - Insert / update.0 - Setting update preparedStatement to [UPDATE "public".tb_stakeholder
+2021/02/07 02:50:42 - Insert / update.0 - SET nome = ?
+2021/02/07 02:50:42 - Insert / update.0 - ,   tiposetor = ?
+2021/02/07 02:50:42 - Insert / update.0 - ,   extinto = ?
+2021/02/07 02:50:42 - Insert / update.0 - ,   divisao_tecnica = ?
+2021/02/07 02:50:42 - Insert / update.0 - ,   entidade_externa = ?
+2021/02/07 02:50:42 - Insert / update.0 - WHERE  ( ( setor = ?  ) ) ]
+2021/02/07 02:50:49 - Table input.0 - Finished reading query, closing connection.
+2021/02/07 02:50:49 - Select values.0 - Finished processing (I=0, O=0, R=912, W=912, U=0, E=0)
+2021/02/07 02:50:49 - bdarchon - Connection to database closed!
+2021/02/07 02:50:49 - Table input.0 - Finished processing (I=912, O=0, R=0, W=912, U=0, E=0)
+2021/02/07 02:51:01 - HML_CatalogoApp - Connection to database closed!
+2021/02/07 02:51:01 - Insert / update.0 - Finished processing (I=912, O=0, R=912, W=912, U=0, E=0)
+2021/02/07 02:51:01 - Carte - Installing timer to purge stale objects after 1440 minutes.
+2021/02/07 02:51:01 - Finished!
+2021/02/07 02:51:01 - Start=2021/02/07 02:50:40.770, Stop=2021/02/07 02:51:01.085
+2021/02/07 02:51:01 - Processing ended after 20 seconds.
+2021/02/07 02:51:01 - tb_copia_setores_hades_tb_stakeholders_catalogo_local -  
+2021/02/07 02:51:01 - tb_copia_setores_hades_tb_stakeholders_catalogo_local - Step Select values.0 ended successfully, processed 912 lines. ( 45 lines/s)
+2021/02/07 02:51:01 - tb_copia_setores_hades_tb_stakeholders_catalogo_local - Step Insert / update.0 ended successfully, processed 912 lines. ( 45 lines/s)
+2021/02/07 02:51:01 - tb_copia_setores_hades_tb_stakeholders_catalogo_local - Step Table input.0 ended successfully, processed 912 lines. ( 45 lines/s)

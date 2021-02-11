@@ -1,0 +1,11 @@
+      <slaveserver>
+        <name>Pentaho Server</name>
+        <hostname>10.1.72.206</hostname>
+        <port>8080</port>
+        <webAppName/>
+        <username>root</username>
+<password>Encrypted 2be98afc86aa7f2e4aa09be639ad18f9b</password>        <proxy_hostname>177.38.99.177</proxy_hostname>
+        <proxy_port>443</proxy_port>
+        <non_proxy_hosts/>
+        <master>N</master>
+        <sslMode>N</sslMode>      </slaveserver>

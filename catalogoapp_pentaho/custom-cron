@@ -1,0 +1,1 @@
+ 0 7 * * 1 /app/pentaho_pdi/agendamento.sh >> /var/log/cron.log 2>&1

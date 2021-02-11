@@ -2,6 +2,36 @@ version: "3"
 
 services:
 
+    pentaho_pdi:
+        build: ./catalogoapp_pentaho
+        container_name: catalogoapp_copia_hades_setores
+        command: cron && tail -f /var/log/cron.log
+        restart: always
+        
+        networks:
+            - frontend
+
+        volumes:
+            - type: bind
+              source: ./catalogoapp_pentaho/custom-cron
+              target: /etc/cron.d/custom-cron
+            
+            - type: bind
+              source: ./catalogoapp_pentaho/agendamento.sh
+              target: /app/pentaho_pdi/agendamento.sh
+
+            - type: bind
+              source: ./catalogoapp_pentaho/cron.log
+              target: /var/log/cron.log
+
+            - type: bind
+              source: ./catalogoapp_pentaho/
+              target: /app/pentaho_pdi/
+
+            - type: volume
+              source: catalogoLogPentahoData
+              target: /app/pentaho_pdi/log/
+
     db:
         build: ./pentaho_server_postgres
         container_name: postgres11
